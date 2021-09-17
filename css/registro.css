@@ -1,0 +1,279 @@
+@font-face{
+  font-family: nunitoRegular;
+  src: url(../Nunito/Nunito-Regular.ttf);
+}
+
+@font-face{
+  font-family: nunitoBold;
+  src: url(../Nunito/Nunito-Bold.ttf);
+}
+
+@font-face{
+  font-family: nunitoBlack;
+  src: url(../Nunito/Nunito-Black.ttf);
+}
+
+
+.registro-preloader {
+  width: 15px;
+  height:15px;
+  border: 2px solid #54B6CB;
+  border-top: 1px solid #FFF;
+  border-radius: 50%;
+  animation-name: girar;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  position: relative;
+  top: 12px;
+  left: -60px;
+  display: none;
+}
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+#registro-main-final{
+	
+	display: none;
+}
+.registro-main-final{
+	padding-top: 150px;
+}
+
+.registo-container-final{
+	border: solid 1px #696969;
+	border-radius: 10px;
+}
+.position-check{
+	position: absolute;
+	top:10px;
+	right: 20px;
+	font-size: 20px;
+	color: #97C69C;
+	display: none;
+}
+
+.registro-avatar-final{
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	display: none;
+}
+.position-cross{
+	position: absolute;
+	top:10px;
+	right: 20px;
+	font-size: 20px;
+	color: #E07676;
+	display: none;
+
+}
+
+#Registro-main{
+	padding-top: 150px;
+}
+
+.titulo{
+	font-family: nunitoBlack;
+	font-size: 30px;
+	color: #696969;
+}
+
+.subtitulo0{
+	font-family: nunitoRegular;
+    font-size: 15px;
+	color: #696969;
+}
+.subtitulo{
+	font-family: nunitoRegular;
+    font-size: 30px;
+	color: #959595;
+}
+
+.subtitulo1{
+	font-family: nunitoRegular;
+    font-size: 25px;
+	color: #959595;
+}
+
+.subtitulo2{
+	font-family: nunitoRegular;
+    font-size: 20px;
+	color: #585858;
+}
+
+.subtitulo3{
+	font-family: nunitoRegular;
+    font-size: 20px;
+	color: #727272;
+}
+
+
+
+.label{
+	font: nunitoRegular;
+	font-size: 20px;
+	letter-spacing: 0px;
+	color: #575757;
+	opacity: 1;
+}
+
+.borde{
+	border: 1px solid #707070;
+	border-radius: 11px;
+	opacity: 1;
+}
+
+.registerfail{
+	color:#E07676;
+	font-size: 12px;
+}
+
+.username-length{
+	color:#E07676;
+	font-size: 12px;
+}
+
+.registerbutton{
+	border: 1px solid #54B6CB;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	width: 186px;
+	height: 38px;
+    border-radius: 5px;
+	font:nunitoRegular 20px/27px;
+	letter-spacing: 0px;
+	color: #54B6CB;
+}
+
+.registro-margen-input{
+	margin-bottom: -10px;
+	
+}
+.sub{
+	font-size: 11px;
+	margin-top: -20px;
+	
+	/*position: absolute;
+	top:40px;
+	left: 260px;*/
+	color: #585858;
+	opacity: 1;
+	font: Regular Nunito;
+}
+.sub2{
+	font-size: 11px;
+	margin-top: 0px;
+	padding: :0px;
+	position: absolute;
+	top:55px;
+	left: 300px;
+	color: #585858;
+	opacity: 1;
+	font: Regular Nunito;
+}
+
+/*----------------------------------------------------------icono de paypal-----------------------------------------*/
+.paypalicon{
+	border: 1px solid #009EE4;
+	border-radius: 6px;
+	opacity: 1;
+}
+
+/*------------------------------------------------inputs de imagenes----------------------------------------------------*/
+
+.frontimage{
+
+	width: 138px;
+    height: 138px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+	border: 1px solid #BFBFBF;
+	border-radius: 10px;
+	opacity: 1;
+	overwflow:hidden;
+
+}
+
+.frontimage:hover{
+   cursor:pointer;
+}
+
+.reverseimage{
+
+	width: 138px;
+    height: 138px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+	border: 1px solid #BFBFBF;
+	border-radius: 10px;
+	opacity: 1;
+
+}
+.reverseimage:hover{
+   cursor:pointer;
+}
+
+/*--------------------------------------------------------------previsualizacion de imagenes---------------------------------------*/
+
+#frontpre{
+	width: 138px;
+    height: 138px;
+    margin-top: -110px;
+ 	margin-left: -12px;
+
+ 	border-radius: 10px;
+ 	border:none;
+}
+
+#reversepre{
+	width: 138px;
+    height: 138px;
+    margin-top: -110px;
+ 	margin-left: -12px;
+
+ 	border-radius: 10px;
+ 	border:none;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------oculto los input originales y creo otro botones----------------------*/
+.hiddeninputfile{
+	position:fixed;
+	top:-100px;
+}
+
+/*-------------------------------------------cruz dentro del input de fotos--------------------------------------------------------*/
+
+
+ .cruz{
+ 	height: 80px;
+ 	width: 80px;
+ 	margin-top: 23px;
+ 	margin-left: 16px;
+ }
+
+ .registro-foto-editar{
+ 	width: 60px;
+ 	height: 60px;
+ 	border-radius: 100%;
+ 	border: solid 2px #54B6CB;
+ }
+ .registro-boton-editar{
+ 	background:#FFF;
+ 	border-radius: 5px;
+ 	border: solid 1px #54B6CB;
+ 	color: #54B6CB;
+ 	font-family: nunitoRegular;
+ 	padding: 5px;
+ 	margin-top: 10px;
+ }
+ .registro-boton-editar:focus{
+    outline: none;`
+ }

@@ -1,0 +1,460 @@
+@font-face{
+  font-family: nunitoRegular;
+  src: url(../Nunito/Nunito-Regular.ttf);
+}
+
+@font-face{
+  font-family: nunitoBold;
+  src: url(../Nunito/Nunito-Bold.ttf);
+}
+
+@font-face{
+  font-family: nunitoBlack;
+  src: url(../Nunito/Nunito-Black.ttf);
+}
+
+
+
+.profile-solo-mi-talla-off{
+  width: 32px;
+  height: 15px;
+  border: solid 1px #B9B9B9;
+  border-radius: 8px;
+  margin-top: 7px;
+  background: #B9B9B9;
+}
+.profile-solo-mi-talla-off:hover{
+  cursor: pointer;
+}
+
+.profile-solo-mi-talla-circulo-off{
+   background: #FFF;
+   width: 10px;
+   height: 11px;
+   border-radius: 100%;
+   margin-top:1px;
+   margin-left: 1px;
+}
+
+.profile-solo-mi-talla-on{
+  width: 32px;
+  height: 15px; 
+  border-radius: 8px;
+  margin-top: 7px;
+  background:#8ccc9c;
+  
+}
+.profile-solo-mi-talla-on:hover{
+  cursor: pointer;
+}
+
+.profile-solo-mi-talla-circulo-on{
+
+   background: #FFF;
+   width: 10px;
+   height: 11px;
+   border-radius: 100%;
+   margin-top:2px;
+   margin-left: 20px;
+
+}
+
+
+
+.profile-solo-mi-talla-text{
+  font-size: 15px;
+  color: #626262;
+  font-family: nunitoRegular;
+  position: relative;
+  top: -10px;
+  margin-left: 5px;
+  display: inline-block;
+
+}
+
+
+
+
+  
+
+.profile-texto{
+    text-overflow: Ellipsis; 
+    width:250px; 
+    white-space: nowrap;
+    overflow:hidden;
+   
+}
+
+.profile-href-imagen-producto:hover{
+
+  text-decoration: none;
+
+}
+.posreservado{
+      position: absolute;
+      bottom:80px;
+      left: 9px;
+      color:#FFF;
+     
+      padding:2px 10px;
+      font-family:nunitoBold;
+      font-size: 15px;
+      width: 110px;
+      height: 25px;
+      background: #54B6CB;
+}
+
+.postalla{
+      position: absolute;
+      bottom:50px;
+      right: 20px;
+      color:black;
+     
+      padding:2px 10px;
+      opacity:0.5;
+      font-family:nunitoBlack;
+      font-size: 20px;
+}
+
+
+.poslike{
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+
+      padding:2px 10px;
+      /*opacity:0.5;*/
+      font-family:nunitoBlack;
+      font-size: 20px;
+}
+
+.estilos-corazon-like{
+  color: #FFF;
+
+}
+
+.poslike:hover{
+   cursor: pointer;
+}
+
+
+.profile-scroll-y::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.profile-scroll-y::-webkit-scrollbar:vertical {
+    height: 10px;
+    width: 7px;
+    
+
+}
+
+.profile-scroll-y::-webkit-scrollbar-thumb {
+    background-color: #6C6C6C;
+    border-radius: 20px;
+    border: 2px solid #6C6C6C;
+    
+}
+
+.profile-scroll-y{
+  height: 165px;
+   
+   overflow-y:scroll;
+   overflow-x:hidden;
+  
+}
+
+.profile-scroll-y-colors::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.profile-scroll-y-colors::-webkit-scrollbar:vertical {
+    height: 10px;
+    width: 7px;
+    
+
+}
+
+.profile-scroll-y-colors::-webkit-scrollbar-thumb {
+    background-color: #6C6C6C;
+    border-radius: 20px;
+    border: 2px solid #6C6C6C;
+    
+}
+
+.profile-scroll-y-colors{
+  height: 100px;
+   
+   overflow-y:scroll;
+   overflow-x:hidden;
+  
+}
+
+.profile-avatar-movil{
+   display: none;
+}
+
+
+
+
+.profile-listas-filtro{
+  color:#575757;
+  font-size: 13px;
+  font-family: nunitoRegular;
+  margin-left: -20px !important;
+  cursor: default;
+}
+
+.profile-listas-filtro-tallas{
+   margin-left: 10px !important;
+   margin-bottom: 5px !important;
+   color:#575757;
+   font-size: 13px;
+   font-family: nunitoRegular;
+}
+.profile-listas-filtro-tallas:hover{
+   cursor: pointer;
+}
+
+
+.profile-listas-filtro:hover{
+   cursor: default;
+}
+
+.sin-productos{
+   color:#6C6C6C;
+   font-size: 40px;
+   font-family: nunitoRegular;
+   padding-top: 10%;
+   padding-bottom: 20%;
+}
+
+/*------------------------------------- donde se muestra la foto de avatar con su nick y los pequenos iconos-----------------------------*/
+
+
+
+.avatar{
+   height: 200px;
+   width: 200px;
+   border-radius: 100px;
+  
+   position:absolute;
+   z-index: 1;
+   
+  top:150px;
+  left:50px;
+
+  border: 5px solid #FFFFFF;
+  opacity: 1;
+  
+}
+
+.nombre{
+  
+   position:absolute;
+   z-index: 1;
+   
+  top:150px;
+  left:270px;
+  color: #FFFFFF;
+  font-size: 40px;
+  font-family: nunitoRegular;
+  
+
+}
+
+.nick{
+  
+   position:absolute;
+   z-index: 1;
+   top:200px;
+   left:270px;
+   color: #FFFFFF;
+   font-size: 30px;
+   font-family: nunitoRegular;
+}
+
+.icon1{
+   width:30px;
+   position:absolute;
+   left:270px;
+   top:280px;
+   z-index: 1;
+
+}
+.icon2{
+   width:30px;
+   position:absolute;
+   left:310px;
+   top:280px;
+   z-index: 1;
+
+}
+
+/*---------------------------------------------------SUBMENU-------------------------------------------------------*/
+
+.subMenu{
+   /*height: 50px;
+   width: 100%;*/
+   background:#F2F2F2 0% 0% no-repeat padding-box;
+   /*position:absolute;*/
+   
+   height: 70px;
+
+
+}
+
+.contSubMenu{
+  width: 99.41%;
+  
+  position:absolute;
+   top:260px;
+   
+
+}
+
+
+
+#contenedor { 
+  max-width: 80%;
+  
+  margin-left: 40%;
+  }
+
+
+.palabra{
+  color: #575757;
+  position:relative;
+   top:10px;
+  
+}
+.palabra span{
+ 
+  font-family:nunitoBold;
+}
+
+.letra span{
+ 
+  font-family:nunitoRegular;
+
+}
+
+.profile-margin-p-l-f{
+	margin-left:50px;
+	
+}
+
+.boton-seguir-movil{
+  display: none;
+}
+
+
+/*-------------------------------------------------------------boton de seguir*-------------------------------------------------------*/
+.boton-seguir{
+  
+  position:absolute;
+  right: 30px;
+  margin-top: 20px;
+  background:#E38F8F 0% 0% no-repeat padding-box;
+  border: none;
+  border-radius: 4px;
+  width: 120px;
+  height: 30px;
+  color: #FFFFFF;
+  display: block;
+
+
+}
+
+.boton-seguir:focus{
+  outline: none;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+  .profile-avatar-pc{
+    display: none;
+  }
+
+  .profile-avatar-movil{
+    display: block;
+  }
+
+  .profile-avatar-movil{
+    height: 170px;
+    width: 170px;
+    border-radius: 100%;
+    border: 3px solid #FFFFFF;
+    z-index: 3;
+
+    position: absolute;
+    top: -320px;
+    
+    
+   }
+
+  .imagehead{
+    height: 380px;
+   }
+
+  .contSubMenu{
+    width: 99.41%;
+  
+    position:absolute;
+    top:360px;
+
+  }
+
+  .profile-nombre-movil{
+    position: absolute;
+    top: -140px;
+    z-index: 3;
+    color: #FFFFFF;
+    font-size: 25px;
+    font-family: nunitoRegular;
+  }
+
+  .profile-nick-movil{
+    position: absolute;
+    top: -100px;
+    z-index: 3;
+    color: #FFFFFF;
+    font-size: 25px;
+    font-family: nunitoRegular;
+  }
+
+  .boton-seguir-movil{
+      display: block;
+      position:absolute;
+      right: 5px;
+      margin-top: 20px;
+      background:#E38F8F 0% 0% no-repeat padding-box;
+      border: none;
+      border-radius: 4px;
+      width: 50px;
+      height: 30px;
+      color: #FFFFFF;
+      display: block;
+
+
+  }
+
+
+  .boton-seguir:focus{
+     outline: none;
+  }
+
+  .boton-seguir{
+    display: none;
+  }
+
+  .sin-productos{
+  
+   padding-top: 200px;
+   padding-bottom: 250px;
+  }
+}

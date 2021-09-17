@@ -1,0 +1,380 @@
+@font-face{
+  font-family: nunitoRegular;
+  src: url(../Nunito/Nunito-Regular.ttf);
+}
+
+@font-face{
+  font-family: nunitoBold;
+  src: url(../Nunito/Nunito-Bold.ttf);
+}
+
+@font-face{
+  font-family: nunitoBlack;
+  src: url(../Nunito/Nunito-Black.ttf);
+}
+
+*{
+	font-family: nunitoRegular;
+}
+ #megusta{
+ 	display: none;
+ }
+.producto-mensaje-like{
+    background:#CDFFE0;
+	border:solid 1px #00ABAF;
+	padding: 10px;
+	position: fixed;
+	bottom: 10px;
+	right:20px;
+	z-index: 1;
+    display: none;
+}
+
+
+
+
+
+#producto-container{
+	padding-top:7%;
+}
+
+.img{
+	width:100%;
+	height:600px;
+	margin-top: 10px;
+	padding-right: 0px;
+   
+}
+
+
+.ip-scroll-comentarios{
+	height:22em;
+    width:100% ;
+    overflow-y:scroll;
+    overflow-x:hidden;	
+}
+
+.p-scroll-chat::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+
+.p-scroll-chat::-webkit-scrollbar:vertical {
+    width: 10px;
+    
+
+}
+
+.p-scroll-chat::-webkit-scrollbar-thumb {
+    background-color:  #54B6CB;
+    border-radius: 20px;
+    border: 2px solid #54B6CB;
+    
+}
+
+.p-scroll-chat{
+
+	height: 150px;
+   
+   overflow-y:scroll;
+   overflow-x:hidden;
+
+}
+
+/*-------------------------------------cambia de color y fuente las letras de la descripcion y el boton------------------------*/
+
+
+.desColor{
+	color:#54B6CB;
+	font-family: nunitoRegular;
+}
+
+.marca{
+	color: #85D7E7;
+}
+
+.desLarga{
+	color:#6C6C6C;
+}
+
+
+.ip-scroll-y-descripcion::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.ip-scroll-y-descripcion::-webkit-scrollbar:horizontal {
+    height: 10px;
+    
+
+}
+
+.ip-scroll-y-descripcion::-webkit-scrollbar-thumb {
+    background-color:  #54B6CB;
+    border-radius: 20px;
+    border: 2px solid #54B6CB;
+    
+}
+
+
+
+.ip-scroll-y-descripcion{
+	height: 100px;
+   
+   overflow-y:scroll;
+   overflow-x:hidden;
+   padding-right:30px;
+} 
+
+
+.favorito{
+	color:#ED8F8F;
+}
+.favorito:hover{
+	cursor: pointer;
+}
+
+.comprar{
+	/*margin-left: 300px;*/
+	width: 173px;
+	height: 55px;
+	border-radius: 5px; 
+	
+	background: #85D7E7 0% 0% no-repeat padding-box;
+	border: 1px solid #54B6CB;	
+	opacity: 1;
+	font-size:30px;
+	color: white;
+}
+
+.comprar a{
+	color:white;
+}
+.comprar a:hover{
+	text-decoration: none;
+}
+
+.comprar:hover{	
+	/*background:#54B6CB;	*/
+
+}
+
+
+/*-------------------------------------------carrusel(ACTUAL)----------------------------------------------------------------------*/
+
+.siguiente{
+      
+      margin-top: 0px;
+	  margin-left: 10px;
+	  width: 60px;
+      height: 60px;
+      border: 1px solid #B7B7B7;
+      border-radius: 100px;
+      outline: none;
+
+      position: relative;
+      top:-110px;
+      right: -600px;
+      
+      
+   
+}
+i{
+	color:#B7B7B7;
+}
+
+.siguiente:hover{
+	outline: none;
+}
+
+.anterior{
+	 
+	  width: 60px;
+      height: 60px;
+      border: 1px solid #B7B7B7;
+      border-radius: 100px;
+      outline: none;
+
+      position: relative;
+      top:80px;
+      left: 20px;
+      
+
+}
+
+.anterior:hover{
+	outline: none;
+}
+
+.flech-right{
+
+     width: 25px;
+     height: 25px;
+     border-left: solid 1px #707070;
+     border-bottom: solid 1px #707070;
+     transform: rotate(225deg);
+     margin-left: 5px;
+}
+.flech-left{
+	 width: 25px;
+     height: 25px;
+     border-left: solid 1px #707070;
+     border-top: solid 1px #707070;
+     transform: rotate(-40deg);
+     margin-left: 15px;
+}
+
+.posicionMiniatura{
+   position:relative;
+    top: -50px;
+   margin-top: 5px;
+
+}
+
+
+.caruselLista{
+   overflow: hidden;
+   height:70%;
+   width:70%;
+   
+}
+
+
+
+.glider-slide{/*modifica la clase de la libreria glider*/
+    width:-100px!important;
+	height:100px!important;
+	margin-left: 10px;
+	margin-top: 0px;
+	padding-top:0px;
+	
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*---------------------------------------------------RESPONSIVE------------------------------------------------------------------*/
+
+@media screen and (max-width: 950px){
+
+	.anterior,
+	.siguiente{
+		display: none;
+	}
+
+	.posicionMiniatura{   
+       margin-top: 70px;
+    }
+
+    
+}
+
+.p-chat-text-1{
+ 	color:#222222;
+ 	font-size: 20px;
+ 	font-family: nunitoRegular;
+ 	margin-left: 10px;
+ 	margin-top: 10px;
+}
+.p-chat-text-2{
+	font-size: 30px;
+	color: #222222;
+	font-family: nunitoRegular;
+}
+.p-chat-text-3{
+	font-size: 20px;
+	color: #727272;
+	font-family: nunitoRegular;
+	
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.p-chat-image{
+	width: 30px;
+	height: 30px;
+	border: 1px solid #707070;
+	opacity: 1;
+	border-radius: 100%;
+}
+.p-chat-textarea{
+	border: 1px solid #C1C0C0;
+	border-radius: 6px;
+	opacity: 1;
+	height: 200px;
+}
+
+.p-chat-textarea-2{
+    border: 1px solid #C1C0C0;
+	border-radius: 6px;
+	opacity: 1;
+	height: 200px;
+	margin-top: 10px;
+
+}
+.p-chat-button{
+	width: 123px;
+    height: 40px;
+    border: 1px solid #54B6CB;
+    background: #85D7E7;
+	border-radius: 5px;
+	opacity: 1;
+	color: #FFF;
+	font-size: 20px;
+	font-family: nunitoRegular;
+	margin-right: 10px;
+}
+
+.p-chat-button-2{
+	width: 123px;
+    height: 40px;
+    border: 1px solid #54B6CB;
+    background: #85D7E7;
+	border-radius: 5px;
+	opacity: 1;
+	color: #FFF;
+	font-size: 20px;
+	font-family: nunitoRegular;
+	margin-top: 20px;
+	margin-right: 50px;
+}
+
+.p-chat-background{
+	background:#F0F0F0;
+	border-radius: 6px;
+	padding: 20px;
+}
+
+.p-chat-background1{
+	background:#F0F0F0;
+	
+	padding-top: 20px;
+	padding-left: 20px;
+
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+.p-chat-background2{
+	background:#F0F0F0;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+.p-chat-background3{
+	background:#F0F0F0;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+.p-chat-avatar-name{
+	color: #727272;
+	font-family: nunitoBold;
+	font-size: 20px;
+	margin-left: 10px;
+}

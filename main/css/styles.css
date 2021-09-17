@@ -1,0 +1,16 @@
+/* BEGIN: Estilos personalizados closeteria */
+@font-face{
+    font-family: Avenir;
+    src:url(fonts/AvenirCondensedHand.ttf)
+}
+
+.sociales{
+    font-family: Avenir;
+}
+
+.boton-subscribirse{
+    background-color: #76B7E0!important;
+    color:#fff;
+}
+
+/* END:Estilos personalizados closetería

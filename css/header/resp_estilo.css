@@ -1,0 +1,444 @@
+
+@font-face{
+  font-family: nunitoRegular;
+  src: url(../../Nunito/Nunito-Regular.ttf);
+}
+
+@font-face{
+  font-family: nunitoBold;
+  src: url(../../Nunito/Nunito-Bold.ttf);
+}
+
+@font-face{
+  font-family: nunitoBlack;
+  src: url(../../Nunito/Nunito-Black.ttf);
+}
+
+
+#app{
+ position: fixed;
+ width: 100%;
+ height: 50px;
+ z-index: 500;
+ 
+
+}
+
+
+.navbar-nav a {
+  color: #fff !important;
+}
+.navbar-nav a:hover {
+  color: black !important;
+  /*color: #D8D8D8 !important;*/
+}
+
+
+.nav-item{
+   margin-right: 10px;
+}
+
+.navbar-brand{
+   margin-left: 10px;
+}
+
+
+
+.navbar-nav .submenu.level-2 {
+  padding-left: 1.5rem;
+}
+
+.navbar-nav .submenu.level-1 {
+ 
+  z-index:1;/*el submenu aparecera encima de todo*/
+
+}
+.navbar-nav .dropdown-toggle::after {
+  display: none;
+}
+
+.icon{
+  margin-right: 10px;
+  margin-bottom: 2px; 
+}
+
+.nav-link span{
+  color:#A7A7A7;
+  font-family: nunitoRegular;
+  font-size: 12px;
+}
+
+/*-----------------------------------------------imagen de avatar en el header al iniciar sesion--------------------------*/
+
+.imagenavatar{
+  
+  width: 40px;
+  height:40px;
+  border-radius: 50px;
+  border: 2px solid #54B6CB;
+}
+
+
+/*---------------------------------------------------------icono de cerrar sesion----------------------------------------*/
+
+.iconologout{
+  color:#A7A7A7;
+}
+
+
+/*----------------------------------------------------------span del cerrar sesion------------------------------------------*/
+
+.logout{
+  color:#A7A7A7;
+  font-size: 15px!important;
+  font-family:nunitoRegular;
+}
+/*-------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+  .navbar-nav .dropdown .submenu {
+    position: absolute;
+    top: 100%;
+    display: none;
+  }
+  .navbar-nav .dropdown .submenu li {
+    display: block;
+  }
+  .navbar-nav .dropdown .submenu li a {
+    display: block;
+    white-space: nowrap;
+    text-decoration: none;
+  }
+  .navbar-nav .dropdown .submenu.level-1 {
+    right: 0px;
+    left: auto;
+    width: 200px;
+
+
+  }
+  /*
+  .navbar-nav .dropdown .submenu.level-2 {
+    padding-left: 0;
+    top: 0;
+    right: 100%;
+    left: auto;
+  }*/
+  .navbar-nav .dropdown:hover .submenu.level-1 {
+    display: block;
+  }
+  .navbar-nav .dropdown:hover .submenu.level-1 li {
+    position: relative;
+  }
+  /*
+  .navbar-nav .dropdown:hover .submenu.level-1 li:hover .submenu.level-2 {
+    display: block;
+  }*/
+  .navbar-nav .dropdown-toggle::after {
+    display: inline-block;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------NUEVO---------------------------------------------*/
+
+.buscador{
+  width: 412px;
+  height: 29px;
+  border: 1px solid #9B9B9B;
+  border-radius: 3px;
+  opacity: 1;
+  position: absolute;
+  left: 250px;
+  top: 30px;
+  font-size: 18px;
+
+  color:#A7A7A7;
+  font-family: FontAwesome, nunitoRegular;
+  
+}
+.buscador:focus{
+   outline: none;
+}
+
+.header-submenu{
+  width: 169px;
+  background: #FFF;
+  border: 1px solid #707070;
+  position: absolute;
+  right: 5px;
+  display: none;
+}
+
+.header-submenu-container-href a{
+   color: #575757;
+
+}
+
+.header-submenu-container-href a:hover{
+   text-decoration: none;
+   
+}
+
+.header-submenu-container-href:hover > a div span{
+ 
+   font-family: nunitoBold;
+}
+
+.header-href-submenu{
+  background: red;
+  z-index: 999;
+}
+.header-href-submenu:hover{
+  text-decoration: none;
+  
+}
+
+.header-text{
+  color: #575757;
+  font-family: nunitoRegular;
+  font-size: 15px;
+ 
+}
+.header-text:hover{
+  color: #575757;
+  font-family: nunitoBold;
+  text-decoration: none; 
+}
+
+.header-submenu-lista{
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-left: 15px;
+}
+
+.header-submenu-lista:hover{
+   text-decoration: none;
+}
+
+.header-flecha-avatar{
+  font-size: 25px;
+  color: #A7A7A7;
+  position: absolute;
+  top:20px;
+  right: 20px;
+}
+.header-flecha-avatar:hover{
+  cursor: pointer;
+}
+
+.header-flecha-avatar-movil{
+  font-size: 25px;
+  color: #A7A7A7;
+  position: absolute;
+  top:25px;
+  right: 10px;
+  display: none;
+}
+.header-flecha-avatar-movil:hover{
+   cursor: pointer;
+}
+
+
+.user-avatar-small{
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  border: solid 1px #54B6CB;
+}
+
+
+.header2-avatar{
+  display: block;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  border: solid 1px #54B6CB;
+
+}
+.header2-circle-boton{
+  width: 36px;
+  height: 36px;
+  background: #F4F4F4;
+  border-radius: 100%;
+}
+
+.header2-iconos{
+  margin-bottom: 10px;
+  display: block;
+  color: #A7A7A7;
+  
+  margin-bottom:-20px;
+  margin-left:10px;
+  position: relative;
+  top: 25%;
+  font-size: 17px;
+  
+}
+.header2-fixed{
+  position:fixed;
+  top:0;
+  width:100%; 
+  z-index:400;
+
+  
+}
+
+.header2-container{
+  margin-left: 1%;
+  margin-right: 1%;
+
+}
+
+
+
+.header2-icon{
+    /*height: 50px;
+    width: 50px;*/
+    margin-top: 20px;
+    position: absolute;
+    top: 0%;
+   
+}
+
+.header2-icons{
+    /*height: 50px;
+    width: 50px;*/
+   width: 11px;
+   height: 13px;
+   margin-right: -15px;
+   color:#34444E;
+   
+}
+.header2-icon-search{
+   width: 11px;
+     height: 13px;
+     color:#34444E;
+     margin-right: -15px;
+}
+
+
+
+header{
+  color:#FFF;
+}
+
+.header2-href {
+  color:#34444E;
+  text-decoration: none;
+  font-size: 10px;
+  font-family: nunitoRegular;
+  margin-top: 0px;
+  margin-bottom: -10px;
+  
+  /*border-bottom: 2px solid #00ABAF;*/
+}
+
+.no-menu-negro{
+  font-size: 10px;
+}
+.header-ingresar{
+  font-size: 10px;
+}
+
+.logo-menu{
+  background: #FFFFFF;
+  border-bottom: solid 1px #D7E0EA;
+}
+
+.logo-menu h6{
+  
+  color: red;
+}
+
+.logo-menu .menu a {
+  display: inline-block;
+  padding: 20px 20px;
+}
+
+.logo-menu .menu a:hover{
+  /*border-bottom: 2px solid #00ABAF;*/
+  text-decoration: none;
+  color:black;
+}
+#header2-movil{
+  display: none;
+}
+
+
+
+@media screen and (max-width: 900px) {
+  .buscador{
+    display: none;
+  }
+
+  .tamano-imagen{
+    width: 150px;
+    height: 40px;
+    margin-top:30px; 
+
+  }
+}
+@media screen and (max-width: 700px) {
+
+  .header-flecha-avatar-movil{
+     display: block;  
+  }
+
+  .header-flecha-avatar{
+    display: none;
+  }
+
+  #header2-movil{
+    display: block;
+  }
+  #header2-pc{
+    display: none;
+  }
+
+  .header2-icons{
+     width: 20px;
+     height: 20px;
+     
+     color:#34444E;
+     display: block;
+     text-align: center;
+   
+    }
+
+    .header2-href {
+    color:#34444E;
+    text-decoration: none;
+    font-size: 15px;
+    
+    
+  }
+  .header2-href img{
+    position: relative;
+    right: -10px;
+    
+    
+  }
+
+    
+
+
+}

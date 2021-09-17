@@ -1,0 +1,34 @@
+.jumbotron{
+	width: 100% !important;
+	height: 730px !important;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+.titulo{
+	text-align: center;
+	margin-top: 150px;
+	width: 600px;
+	position: relative;
+	left: 60%;
+}
+.subtitulo{
+	text-align: center;
+	width: 600px;
+    position: relative;
+	left: 60%;
+}
+
+.parrafo{
+	margin-top: 20px;
+	position: relative;
+	left: 60%;
+	text-align: justify;
+}
+
+.parrafoc{
+	margin-top: 30px;
+	position: relative;
+	left: 60%;
+	text-align: justify;
+}

@@ -1,0 +1,263 @@
+@font-face{
+
+  font-family: nunitoRegular;
+
+  src: url(../Nunito/Nunito-Regular.ttf);
+
+}
+
+
+
+@font-face{
+
+  font-family: nunitoBold;
+
+  src: url(../Nunito/Nunito-Bold.ttf);
+
+}
+
+
+
+@font-face{
+
+  font-family: nunitoBlack;
+
+  src: url(../Nunito/Nunito-Black.ttf);
+
+}
+
+
+
+.errorlogin{
+
+  font-family: nunitoRegular;
+
+  color: red;
+
+}
+
+
+
+/*------------------------------------------------------margen superior del login----------------------------*/
+
+
+
+#continerlogin{
+
+ 
+
+  padding-top: 150px;
+
+}
+
+.marginlogin{
+
+	margin-top: 30px;
+
+}
+
+
+
+
+
+/*-------------------------------------------------------boton del login-------------------------------------*/
+
+.btnlogin{
+
+	background: #85D7E7 0% 0% no-repeat padding-box;
+
+	border: 1px solid #54B6CB;
+
+	border-radius: 5px;
+
+	opacity: 1;
+
+	width: 173px;
+
+	height: 45px;
+
+	color:#FFFFFF;
+
+	font-size: 25px;
+
+}
+
+
+
+.btnlogin:hover{
+
+	background:#54B6CB;
+
+	border: 1px solid #85D7E7;
+
+	
+
+}
+
+
+
+/*-----------------------------------------------------etiquetas del login-------------------------------------*/
+
+
+
+.labelogin{
+
+   color: #575757;
+
+   font-family: nunitoRegular;
+
+   font-size: 18px;
+
+}
+
+
+
+/*--------------------------------------------href de olvidar password--------------------------------------------*/
+
+
+
+.loginforgotpass{
+
+text-align: center;
+
+}
+
+
+
+.loginforgotpass a{
+
+    
+
+   color: #AFAFAF;
+
+   /* font-size: 13px; */
+
+}
+
+/*------------------------------------------------mensaje de registrar cuenta-------------------------------------*/
+
+
+
+.loginregister{
+
+  margin-top: 30px;
+
+  /* font-size: 30px; */
+
+  color: #575757;
+
+  opacity: 1;
+
+  font-family: nunitoRegular;
+
+}
+
+.loginregisterlink{
+
+  margin: 0 4px 0 4px;
+
+  text-decoration: underline;
+
+  color: #575757;
+
+  opacity: 1;
+
+  font-family: nunitoRegular;
+
+}
+
+
+
+.loginregisterlink:hover{
+
+  color:grey;
+
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+
+
+.preloader {
+
+
+
+  width: 15px;
+
+  height:15px;
+
+  border: 2px solid #FFF;
+
+  border-top: 1px solid #85D7E7;
+
+
+
+
+
+ 
+
+  border-radius: 50%;
+
+  animation-name: girar;
+
+  animation-duration: 1s;
+
+  animation-iteration-count: infinite;
+
+  animation-timing-function: linear;
+
+
+
+  position: relative;
+
+  top: -25px;
+
+  left: 130px;
+
+  display: none;
+
+}
+
+@keyframes girar {
+
+  from {
+
+    transform: rotate(0deg);
+
+  }
+
+  to {
+
+    transform: rotate(360deg);
+
+  }
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 900px){
+
+
+
+  .loginforgotpass{
+
+    
+
+   margin-left: -20px;
+
+
+
+  
+
+   }
+
+
+
+}

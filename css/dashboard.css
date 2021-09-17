@@ -1,0 +1,214 @@
+
+
+@font-face{
+
+  font-family: nunitoRegular;
+
+  src: url(../Nunito/Nunito-Regular.ttf);
+
+}
+
+
+
+@font-face{
+
+  font-family: nunitoBold;
+
+  src: url(../Nunito/Nunito-Bold.ttf);
+
+}
+
+
+
+@font-face{
+
+  font-family: nunitoBlack;
+
+  src: url(../Nunito/Nunito-Black.ttf);
+
+}
+
+
+
+
+
+
+
+/*------------------------------------------------------------------NUEVO SIDEBAR----------------------------------------------------*/
+
+
+
+
+
+
+
+.sidebarmain{
+
+	background-color: #32373E;
+
+	position: fixed;
+
+	height: 100%;
+
+	left:0;
+
+	top:77px;
+
+	border-top: solid 1px #6A737C;
+
+	z-index: 500;
+
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+	.sidebarmain{
+
+		display: none;
+
+	}
+
+}
+
+
+
+/*---------------------------------oculto el titulo del item si no esta desplegado-----------------------------------------------*/
+
+.sidebar-title-item{
+
+	display: none;
+
+	
+
+}
+
+
+
+
+
+
+
+/*---------------------------------------------expando menu al hacer hover y muestro los nombres de los item------------------------------*/
+
+
+
+.sidebar-border-bottom{/* muestra la separacion de abajo de cada item*/
+
+	margin-top: 3px;
+
+	border-bottom: solid 1px #6A737C;
+
+
+
+}
+
+.sidebarmain:hover{
+
+    width: 200px;  	
+
+}
+
+
+
+
+
+/*.sidebarmain{
+
+    width: 60px;
+
+    -webkit-transition: width 0.5s, background 0.5s;
+
+    -moz-transition: width 0.5s, background 0.5s;
+
+    -o-transition: width 0.5s, background 0.5s;
+
+    transition: width 0.5s, background 0.5s;
+
+    
+
+}*/
+
+
+
+
+
+
+
+.sidebarmain:hover .sidebar-title-item{/* al expandir la barra muestra los nombre de los item*/
+
+
+
+    
+
+	display:inline-block;
+
+	font-size: 15px;
+
+	font-family: nunitoRegular;
+
+	color: #838383;
+
+	position: relative;
+
+	top: -17px;
+
+	
+
+}
+
+
+
+.sidebar-item:hover .sidebar-title-item{/* al seleccionar un item cambia de color*/
+
+	color: white;
+
+}
+
+
+
+.sidebar-item:hover .sidebar-icon{
+
+	color: white;
+
+}
+
+
+
+
+
+
+
+.sidebar-item:hover{
+
+	background-color: #5CA4CB;
+
+}
+
+
+
+
+
+
+
+.sidebar-icon{/*cambio el estilo de los iconos*/
+
+   color: #6A737C;
+
+   font-size: 20px;
+
+   margin:15px;
+
+}
+
+
+
+
+
+
+
+/*---------------------------------------------------------contenido de la pagina--------------------------------------------*/
+
+
+

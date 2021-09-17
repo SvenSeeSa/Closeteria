@@ -1,0 +1,170 @@
+@font-face{
+  font-family: nunitoRegular;
+  src: url(../Nunito/Nunito-Regular.ttf);
+}
+
+@font-face{
+  font-family: nunitoBold;
+  src: url(../Nunito/Nunito-Bold.ttf);
+}
+
+@font-face{
+  font-family: nunitoBlack;
+  src: url(../Nunito/Nunito-Black.ttf);
+}
+
+
+.pago-imagen-vendedora{
+
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+}
+
+#main-metodo{
+  padding-top: 150px;
+}
+
+.fondo{
+	border: 1px solid #C9C9C9;
+    border-radius: 26px;
+    opacity: 1;
+	background: #F7F7F7 0% 0% no-repeat padding-box;
+	font-family: nunitoBlack;
+
+
+
+}
+
+
+/*----------------------------------------------------------------BOTON DE CONTINUAR--------------------------------------------*/
+.continuar{
+	
+	background: #85D7E7;
+	border: none;
+	width: 173px;
+    height: 55px;
+	border-radius: 5px;
+	
+	font-size: 20px;
+	position:relative;
+	right: -70px;
+	border: 1px solid #54B6CB;
+  color: white;
+}
+
+#continuar button{
+  color: #FFFFFF;
+}
+
+
+
+
+.continuar:hover{
+	
+	background: #54B6CB;
+	border: 1px solid #85D7E7;
+
+}
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------Colores de la letras-----------------------------------------*/
+
+.azul{
+   color: #54B6CB;
+   opacity: 1;
+}
+
+.gris{
+   color:#6C6C6C;
+}
+
+.grisClaro{
+	color: #AFAFAF;
+    opacity: 1;
+}
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------HREF terminos y condiciones------------------------------------------------*/
+.terminos:hover{
+  text-decoration: none;
+  color: #393B3C;
+}
+.terminos{
+  text-decoration: underline;
+  color:#6A6D6F;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------HREF refrescar pagina---------------------------------------------------*/
+.refrescar:hover{
+    text-decoration: none;
+    color:#6A6D6F;
+}
+.refrescar{
+	text-decoration: underline;
+	color:#AFAFAF;
+	margin-left: 4px;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------HREF proteccion al comprador---------------------------------------*/
+.proteccion{
+	color:#FF8686;
+}
+.proteccion:hover{
+
+	color: #F11444;
+}
+
+
+/*---------------------------------------------------------------------estilo del input radio-------------------------------------------*/
+input[type='radio']:after {
+   width: 15px;
+   height: 15px;
+   border-radius: 15px;
+   top: -2px;
+   left: -1px;
+   position: relative;
+   background-color: #d1d3d1;
+   content: '';
+   display: inline-block;
+   visibility: visible;
+   border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+   width: 15px;
+   height: 15px;
+   border-radius: 15px;
+   top: -2px;
+   left: -1px;
+   position: relative;
+   background-color: #6C6C6C ;
+   content: '';
+   display: inline-block;
+   visibility: visible;
+   border: 2px solid white;
+}
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+@media  screen and (max-width: 800px){
+  #tudinero{
+	width: 300px;
+	height: 50px;
+ }
+
+ #tudineroavatar{
+ 	width: 40px;
+	height: 40px;
+ }
+}

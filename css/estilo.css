@@ -1,0 +1,981 @@
+
+
+
+
+@font-face{
+
+  font-family: nunitoRegular;
+
+  src: url(../Nunito/Nunito-Regular.ttf);
+
+}
+
+
+
+@font-face{
+
+  font-family: nunitoBold;
+
+  src: url(../Nunito/Nunito-Bold.ttf);
+
+}
+
+
+
+@font-face{
+
+  font-family: nunitoBlack;
+
+  src: url(../Nunito/Nunito-Black.ttf);
+
+}
+
+
+* {
+  font-size: 15px;
+}
+
+
+
+
+.container-imagenes-productos{
+
+  /*padding: 0px;
+
+  margin-left: 15%;
+
+  margin-right: 10px;*/
+
+
+
+  padding: 0px;
+
+  margin-left: 220px;
+
+  margin-right: 10px;
+
+}
+
+
+
+
+
+/*-----------------------------------------------------barra leteral--------------------------------------------------------*/
+
+.container-menu{
+
+  position: absolute;
+
+  
+
+  width: 300px;
+
+  height: 100hv;
+
+  top: 140px;
+
+  left: 0;
+
+  
+
+
+
+  
+
+  
+
+
+
+}
+
+
+
+.cont-menu{
+
+  
+
+   width: 80%;
+
+   max-width: 200px;
+
+   background: #FFFFFF;
+
+   height: 100%;
+
+   position: relative;
+
+   border: 10px;
+
+
+
+   border-right: solid 1px #E0E0E0;
+
+
+
+
+
+}
+
+
+
+
+
+.cont-menu nav li{
+
+   display: block;
+
+   text-decoration: none;
+
+   padding-left: 0px;
+
+   color: grey;
+
+   border-left: 0px solid transparent;
+
+   margin-bottom: 10px;
+
+   font-family: nunitoRegular;
+
+   
+
+}
+
+
+
+.cont-menu nav ul{
+
+   
+
+   color: grey;
+
+   font-family: nunitoRegular;
+
+  
+
+}
+
+
+
+.cont-menu nav a:hover{
+
+  
+
+   /*border-left: 5px solid #c7c7c7;*/
+
+   color: #1f1f1f;
+
+   text-decoration: none;
+
+}
+
+
+
+.category{
+
+  font-size: 20px;
+
+}
+
+.size{
+
+  font-size: 20px;
+
+}
+
+.colors{
+
+  font-size: 20px;
+
+}
+
+
+
+/*-------------------------------------------------------muestra los circulos de colores---------------------------------*/
+
+.colores{
+
+  width:35px;
+
+  height:35px;
+
+  border-radius:100%;
+
+  display: inline-block;
+
+  margin-left: 5px;
+
+  margin-top: 5px;
+
+}
+
+
+
+.cont{
+
+  padding: 0px;
+
+  margin-left: 30px;
+
+  margin-right: 0px;
+
+
+
+}
+
+
+
+.mainpalet{
+
+  margin-top:10px;
+
+  
+
+}
+
+
+
+.mainpalet .thumb{
+
+
+
+  margin-bottom: 20px;
+
+}
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------imagen luego del header-----------------------------------------------*/
+
+
+
+.imagehead{
+
+  height: 250px;
+
+  width: 100%;
+
+  margin-top: 40px;
+
+
+
+
+
+  
+
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+.option{
+
+  margin-left: 50px;
+
+}
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*-------------------------------------------------------buscador de header-------------------------------------------------*/
+
+.buscar{
+
+  
+
+  height: 25px;
+
+  margin-left: 30px;
+
+  width: 400px;
+
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+
+  border: 1px solid #9B9B9B;
+
+  border-radius: 3px;
+
+  opacity: 1;
+
+  color:#A7A7A7;
+
+  font-family: nunitoRegular;
+
+
+
+
+
+}
+
+
+
+.buscar input[type-text]{
+
+  padding-left: 60px;
+
+}
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------icono de header-------------------------------------------------------*/
+
+.closeteria-icon{
+
+  margin-left:-130px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+/*----------------------------------------------iconos de mis likes ,compras, ingresar-----------------------------------------------------*/
+
+
+
+
+
+.header-circle-button{
+
+  background: #F4F4F4;
+
+  border-radius: 100%;
+
+  height: 35px;
+
+  width: 35px;
+
+  /*position: absolute;
+
+  right: 60px;
+
+  opacity: 60%;*/
+
+}
+
+.iconoMenuPrincipal{
+
+   display: block;
+
+   height: 20px;
+
+   width: 20px;
+
+   margin-left:12px;
+
+   color:#A7A7A7;
+
+
+
+   margin-left: auto;
+
+   margin-right: auto;
+
+   position: relative;
+
+   top: 8px;
+
+
+
+}
+
+.iconoMenuPrincipal:hover{
+
+   display: block;
+
+   height: 20px;
+
+   width: 20px;
+
+   margin-left:10px;
+
+   color:grey;
+
+}
+
+
+
+.textoMenu{
+
+  font-size: 10px!important;
+
+  font-family: nunitoRegular;
+
+}
+
+
+
+.positionlci{
+
+  margin-right:-120px!important;
+
+}
+
+
+
+
+
+
+
+
+
+ /*------------------------------------------------------------fecha del dropdown del menu principal--------------------------*/   
+
+.dropdown-toggle::after{
+
+  color:#A7A7A7;
+
+  font-size: 40px;
+
+  margin-top: 20px;
+
+
+
+  padding: 0px;
+
+  margin-left: -50px;
+
+  position: relative;
+
+  left: -20px;
+
+  top:-3px;
+
+}
+
+
+
+.navbar-nav a {
+
+    color: #A7A7A7 !important;
+
+}
+
+
+
+/*flecha del menu en responsive*/
+
+
+
+.hidearrow{
+
+    display: none;
+
+  }
+
+
+
+@media screen and (max-width: 800px){
+
+
+
+
+
+  .hidearrow{
+
+    display: block;
+
+    margin-left: 12px;
+
+    position: relative;
+
+    top: -20px;
+
+    font-size: 25px;
+
+    color:#A7A7A7;
+
+  }
+
+
+
+  .hidearrow:hover{
+
+    cursor: pointer;
+
+    color:grey;
+
+  }
+
+}
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*-------------------------------------------------------------selects de la pagina----------------------------------------------*/
+
+
+
+ .select{
+
+    border: 1px solid #D0D0D0;
+
+    border-radius: 3px;
+
+    opacity: 1;
+
+    color: grey;
+
+    font-family:nunitoRegular;
+
+ }
+
+
+
+ .select:focus{   
+
+    outline: none;
+
+ }
+
+
+
+ .select:active{
+
+    
+
+    border-radius: 0.2em;
+
+    color: grey;
+
+    font-family:nunitoRegular;
+
+    border-color: grey;
+
+
+
+ }
+
+
+
+ .colorLabel{
+
+    color: grey;
+
+    font-family: nunitoRegular;
+
+ }
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+/*----------------------------------------------------------------titulo y precio del producto-------------------------------------*/
+
+
+
+
+
+.tittle{
+
+  font-family:nunitoRegular;
+
+  text-align: center;
+
+}
+
+.precio{
+
+  font-family:nunitoBlack;
+
+  text-align: center;
+
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------talla y boton de like-------------------------------------------------*/
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+/*-----------------------------------------------footer de la pagina-------------------------------------------------------------*/
+
+
+
+
+
+
+
+footer{
+
+  background: white;
+
+  
+
+  color: #FFF;
+
+  padding:40px;
+
+}
+
+
+
+footer .nav a {
+
+   
+
+   
+
+   padding:20px;
+
+   color: #54B6CB;
+
+   opacity: 1;
+
+   text-decoration: none;
+
+   font-family: nunitoRegular;
+
+   
+
+}
+
+
+
+.hr{
+
+  
+
+  border-top: 1px solid #54B6CB;
+
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+.estilo-sin-producto-movil{
+
+  display: none;
+
+}
+
+
+
+
+
+
+
+
+
+.has-error .help-block,
+
+.has-error .help-block-horizon,
+
+.has-error .control-label,
+
+.has-error .radio,
+
+.has-error .checkbox,
+
+.has-error .radio-inline,
+
+.has-error .checkbox-inline,
+
+.has-error.radio label,
+
+.has-error.checkbox label,
+
+.has-error.radio-inline label,
+
+.has-error.checkbox-inline label {
+
+  color: #a94442;
+
+}
+
+.has-error .form-control {
+
+  border-color: #a94442;
+
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+
+}
+
+.has-error .form-control:focus {
+
+  border-color: #843534;
+
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+
+}
+
+.has-error .input-group-addon {
+
+  color: #a94442;
+
+  background-color: #f2dede;
+
+  border-color: #a94442;
+
+}
+
+.has-error .form-control-feedback {
+
+  color: #a94442;
+
+}
+
+.has-feedback label ~ .form-control-feedback {
+
+  top: 25px;
+
+}
+
+.has-feedback label.sr-only ~ .form-control-feedback {
+
+  top: 0;
+
+}
+
+.help-block {
+
+  display: block;
+
+  margin-top: 5px;
+
+  margin-bottom: 10px;
+
+  color: #dc3545;
+
+}
+
+.help-block-horizon {
+
+  display: block;
+
+  margin-top: 5px;
+
+  margin-bottom: 10px;
+
+  color: #dc3545;
+
+  width: 100%;
+
+}
+
+
+
+.cmp-registerfail {
+
+  border-color: #E07676;
+
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+
+}
+
+
+
+
+
+/*****************************************************************RESPONSIVE********************************************************/
+
+
+
+/*-----------------------------------------------------submenu---------------------------------------------------------------------*/
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px){
+
+
+
+
+
+    .contSubMenu{
+
+      width: 100%;
+
+      position:absolute;
+
+       top:254px;
+
+    }
+
+
+
+    .container-menu{
+
+      /*display: none;*/
+
+     
+
+
+
+    }
+
+
+
+    .cont-menu{
+
+     /* display: none;*/
+
+    }
+
+    
+
+}
+
+
+
+@media screen and (max-width: 800px){
+
+ 
+
+    .contSubMenu{
+
+      width: 100%;
+
+      position:absolute;
+
+       top:270px;
+
+    }
+
+
+
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 900px){
+
+
+
+  .container-menu{
+
+      /*display: none;*/
+
+      position: absolute;
+
+  
+
+      width: 300px;
+
+      height: 100hv;
+
+      top: 200px;
+
+      left: 0;
+
+
+
+    }
+
+
+
+    .estilo-container-select{
+
+      display: none;
+
+    }
+
+
+
+    .estilo-sin-producto-movil{
+
+      display: block;
+
+    }
+
+    .estilo-sin-producto-pc{
+
+      display: none;
+
+    }
+
+
+
+
+
+    .select{  
+
+        font-size: 10px;
+
+    }
+
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/

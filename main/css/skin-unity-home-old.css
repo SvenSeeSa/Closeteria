@@ -1,0 +1,209 @@
+
+.skin-unity .unity-content-header {
+    background: transparent;
+    box-shadow: none;
+}
+
+.unity-content-header {
+    position: relative;
+    padding: 15px 15px 0 15px;
+}
+
+.unity-content-header > h1 {
+	margin:0;
+	color: #707070 !important;
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.box-home {
+	border-radius: 6px;
+	background: #ffffff;
+	box-shadow: 0px 3px 10px -2px rgba(0,0,0,0.3);
+	border-radius: 6px 6px 6px 6px;
+	-moz-border-radius: 6px 6px 6px 6px;
+	-webkit-border-radius: 6px 6px 6px 6px;
+	border: 0px solid #000000;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.box-home:hover {
+	box-shadow: 0px 3px 10px -2px rgba(0,0,0,0.5);
+}
+
+.title-box-home-lg {
+	color: #8EABDB !important;
+	font-size: 30px;
+	font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.title-box-home-md {
+	color: #8EABDB !important;
+	font-size: 20px;
+	font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.table-borderless > tbody > tr > td,
+.table-borderless > tbody > tr > th,
+.table-borderless > tfoot > tr > td,
+.table-borderless > tfoot > tr > th,
+.table-borderless > thead > tr > td,
+.table-borderless > thead > tr > th {
+    border: none;
+}
+
+table > tbody > tr > td.row-checkbox-task {
+	width: 7%;
+	text-align: right;
+	padding-top: 25px;
+}
+
+table > tbody > tr > td.row-avatar-task {
+	width: 13%;
+	text-align: center;
+	cursor: pointer;
+}
+
+table > tbody > tr > td.row-date-task {
+	width: 18%;
+	text-align: left;
+	padding-top: 25px;
+	cursor: pointer;
+}
+
+table > tbody > tr > td.row-icon-task {
+	width: 5%;
+	text-align: center;
+	padding-top: 25px;
+	cursor: pointer;
+}
+
+table > tbody > tr > td.row-text-task {
+	width: 60px;
+	text-align: left;
+	padding-top: 25px;
+	cursor: pointer;
+}
+
+.btn-link {
+    display: inline-block;
+    padding: 6px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+	-webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+img.img-circle-task {
+    max-width: 60px;
+    border-radius: 50%;
+    border: 2px solid #8EABDB;
+}
+
+p.detail {
+    font-size: 12px;
+    margin-top: 1px !important;
+    color: #ACACAC;
+}
+
+.checkbox-task {
+	width: 20px;
+	height: 20px;
+	padding-top: 15px;
+	background: #fff !important;
+}
+
+.text-task {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.elipse-default-unity {
+	font-size: 12px;
+	color: #32373E !important;
+	margin-left: 2px;
+	margin-right: 2px
+}
+.elipse-primary-unity {
+	font-size: 12px;
+	color: #8EABDB !important;
+	margin-left: 2px;
+	margin-right: 2px
+}
+.elipse-success-unity {
+	font-size: 12px;
+	color: #85C692 !important;
+	margin-left: 2px;
+	margin-right: 2px
+}
+.elipse-danger-unity {
+	font-size: 12px;
+	color: #FF7C7C !important;
+	margin-left: 2px;
+	margin-right: 2px
+}
+.elipse-gray-ligth-unity {
+	font-size: 12px;
+	color: #CCCCCC !important;
+	margin-left: 2px;
+	margin-right: 2px
+}
+.elipse-gray-unity {
+	font-size: 12px;
+	color: #838383 !important;
+	margin-left: 2px;
+	margin-right: 2px
+}
+
+.elipse-warning-unity {
+	font-size: 12px;
+	color: #f39c12 !important;
+	margin-left: 2px;
+	margin-right: 2px
+}
+
+.movement {
+	margin-left: 14px;
+	margin-bottom: 1px
+}
+
+p.msj {
+    color: #707070;
+    font-weight: 600;
+    margin-left: 32px !important;
+    margin-top: 1px !important;
+    font-size: 13px !important;
+}
+
+.item-movement {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.item-movement.with-border {
+    border-bottom: 1px solid #f4f4f4;
+}
+
+/* .icon-message{
+	background-color: greenyellow;
+} */

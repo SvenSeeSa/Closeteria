@@ -1,0 +1,34 @@
+@font-face{
+  font-family: nunitoRegular;
+  src: url(../Nunito/Nunito-Regular.ttf);
+}
+
+@font-face{
+  font-family: nunitoBold;
+  src: url(../Nunito/Nunito-Bold.ttf);
+}
+
+@font-face{
+  font-family: nunitoBlack;
+  src: url(../Nunito/Nunito-Black.ttf);
+}
+
+.f-container{
+	border-top: 1px solid #85D7E7;
+	background: #F5FCFD;
+	margin-top: 100px;
+}
+.f-link{
+	font-size: 15px;
+	color: #54B6CB;
+	font-family: nunitoRegular;
+}
+
+.f-link:hover{
+	text-decoration: none;
+	color: #85D7E7;
+}
+.f-icon{
+	width: 200px;
+	height: 60px;
+}
