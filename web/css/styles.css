@@ -2067,11 +2067,51 @@ a.btnLike2 {
 
 /*--------------------------Seguidoras--------------------------*/ 
 
+.head-user .form-control{
+  text-align: center;
+  border-radius: 12px;
+  width: 200px;
+  left: 0; 
+  top: 0;
+  justify-content: center;
+}
 
+.head-user i{
+  position: absolute;
+  z-index: 99;
+  color: #9C9C9C;
+  line-height: 2;
+  margin-left: 1vh;
+}
 
+.head-user .search-box{
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+  align-self: flex-end;
+}
 
+.followers-list{
+  margin-top: 3vh;
+}
 
+.followers-list .content-list-horizontal .list-group{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
 
+.followers-list .content-list-horizontal p{
+  margin-left: 1vh;
+}
+
+.followers-list .content-list-horizontal img{
+  height: 40px;
+  width: 40px;
+  border-radius: 24px;
+  border: solid #9AB4DF;
+}
 
 
 
