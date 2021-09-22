@@ -1844,6 +1844,11 @@ a.btnLike2 {
   z-index: 99;
   transition: all 0.5s ease;
 }
+
+.sidebar-sell{
+  width: 88px;
+}
+
 .sidebar.open{
   width: 240px;
 }
@@ -2045,6 +2050,51 @@ a.btnLike2 {
   align-items: center;
 }
 
+.profile-sell{
+  display: flex;
+  flex-direction: row;
+  margin-top: 3vh;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 10%;
+}
+
+@media only screen and (max-width: 500px) and (min-width: 200px) {
+  .profile-sell{
+    margin-right: 35%;
+  }
+}
+
+@media only screen and (max-width: 700px) and (min-width: 500px) {
+  .profile-sell{
+    margin-right: 25%;
+  }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 700px) {
+  .profile-sell{
+    margin-right: 20%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1000px) {
+  .profile-sell{
+    margin-right: 15%;
+  }
+}
+
+.profile-sell::after{
+  content: '\25be';
+  font-size: 2em;
+  color: #696969;
+}
+
+.profile-sell img{
+  height: 45px;
+  width: 45px;
+  border-radius: 24px;
+}
+
 .profile img{
   height: 45px;
   width: 45px;
@@ -2122,12 +2172,151 @@ a.btnLike2 {
   font-family: nunitoRegular;
 }
 
-
 .head{
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 3vh;
+  width: 80%;
+  margin-left: 5%;
+}
+
+.head-advertisement{
+  display: flex;
+  align-items: flex-end;
+  width: 80%;
+  margin-left: 5%;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.head-title{
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.step-content{
+  margin-top: 7%;
+}
+
+.step-title{
+  color: #54B6CB;
+  font-size: 2.5em;
+}
+
+.step-text{
+  margin-top: 1%;
+  text-align: justify;
+  max-width: 1200px;
+}
+
+.head-subtitle{
+  margin-top: 1rem;
+  font-size: 1.2em;
+  text-align: center;
+  width: 65%;
+}
+
+.advertisement{
+  margin-top: 5rem;
+  text-align: center;
+  width: 55%;
+  border: solid  2px #80CC95;
+  border-radius: 0 15px 15px 0;
+}
+
+.ad{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 4.4rem;
+  height: 4.44rem;
+  background-color: #80CC95;
+  border-radius: 15px 0 0 15px;
+  font-size: 2em;
+  color: #fff;
+}
+
+.container{
+  margin-top: 5rem;
+  text-align: center;
+  margin-left: 35px;
+}
+
+.footer{
+  height: 15rem;
+}
+
+.btn-primary{
+  color: #fff;
+  background-color: #54B6CB;
+  border: solid 2px transparent;
+  font-size: 1.5em;
+  padding: 5px 35px;
+}
+
+.sell-form{
+  font-family: 'nunitoRegular';
+  margin-top: 2%;
+  max-width: 1200px;
+}
+
+.form-group{
+  margin-top: 3%;
+}
+
+.form-control{
+  border-radius: 10px;
+  margin-top: 1%;
+  width: 75%;
+}
+
+#FormControlSelect2{
+  margin-left: -10rem;
+}
+
+#FormControlSelectSize{
+  width: 15%;
+}
+
+#FormControlInputPrice{
+  width: 15%;
+}
+
+.input-text{
+  width: 15%;
+  font-size: 0.7em;
+}
+
+.icon{
+  margin-right: 1rem;
+}
+
+.btn-primary:hover{
+  color: #54B6CB;
+  background-color: #FFF;
+  border-color: #54B6CB;
+}
+
+@media only screen and (max-width: 500px) and (min-width: 200px) {
+  .head{
+    width: 50%;
+  }
+  
+  .head-advertisement{
+    width: 70%;
+    margin-left: -5%;
+  }
+
+  .advertisement{
+    border-radius: 15px;
+  }
+
+  .ad{
+    display: none;
+  }
 }
 
 .home-section h1{
