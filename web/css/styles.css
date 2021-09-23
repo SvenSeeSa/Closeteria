@@ -2349,6 +2349,10 @@ a.btnLike2 {
     width: 50%;
   }
   
+  .step-content{
+    width: 15rem;
+  }
+
   .head-advertisement{
     width: 70%;
     margin-left: -5%;
@@ -2356,10 +2360,87 @@ a.btnLike2 {
 
   .advertisement{
     border-radius: 15px;
+    height: 20rem;
   }
 
   .ad{
     display: none;
+  }
+
+  .container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn-container{
+    width: 75%;
+    margin-left: -5%;
+  }
+
+  .btn-primary {
+    margin-top: -11%;
+    font-size: 1em;
+    padding: 5px 5px;
+  }
+
+  .form-group-2 {
+    width: 100%;
+  }
+
+  .form-group-3{
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .form-control-2 {
+    width: 100%;
+    margin: 10px 2px;
+  }
+
+  .form-control {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  #FormControlInputTitle{
+    margin-left: 5px;
+  }
+
+  .input-text {
+    width: 40%;
+    font-size: 9px;
+  } 
+
+  .input-text-2{
+    width: 100%;
+  }
+
+  #FormControlInputPrice {
+    width: 40%;
+  }
+
+  #FormControlSelectSize {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 500px) {
+  .container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn-container{
+    margin-left: -2%;
+  }
+
+  .btn-accept{
+    margin-left: -2%;
+  }
+
+  .advertisement{
+    font-size: 14px;
   }
 }
 
