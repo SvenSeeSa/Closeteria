@@ -2050,6 +2050,8 @@ a.btnLike2 {
   align-items: center;
 }
 
+/*------------------------Sell Product---------------------*/
+
 .profile-sell{
   display: flex;
   flex-direction: row;
@@ -2057,30 +2059,6 @@ a.btnLike2 {
   align-items: center;
   justify-content: flex-end;
   margin-right: 10%;
-}
-
-@media only screen and (max-width: 500px) and (min-width: 200px) {
-  .profile-sell{
-    margin-right: 35%;
-  }
-}
-
-@media only screen and (max-width: 700px) and (min-width: 500px) {
-  .profile-sell{
-    margin-right: 25%;
-  }
-}
-
-@media only screen and (max-width: 1000px) and (min-width: 700px) {
-  .profile-sell{
-    margin-right: 20%;
-  }
-}
-
-@media only screen and (max-width: 1200px) and (min-width: 1000px) {
-  .profile-sell{
-    margin-right: 15%;
-  }
 }
 
 .profile-sell::after{
@@ -2112,73 +2090,6 @@ a.btnLike2 {
   color: #C6C6C6;
   font-family: nunitoBold;
   font-size: 12px;
-}
-
-
-/*--------------------------Seguidoras--------------------------*/ 
-
-.head-user .form-control{
-  text-align: center;
-  border-radius: 12px;
-  width: 200px;
-  left: 0; 
-  top: 0;
-  justify-content: center;
-}
-
-.head-user i{
-  position: absolute;
-  z-index: 99;
-  color: #9C9C9C;
-  line-height: 2;
-  margin-left: 1vh;
-}
-
-.head-user .search-box{
-  display: flex;
-  justify-content: flex-end;
-  width: 90%;
-  align-self: flex-end;
-}
-
-.followers-list{
-  margin-top: 3vh;
-}
-
-.followers-list .content-list-horizontal .list-group{
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: space-between;
-  
-}
-
-.followers-list .content-list-horizontal p{
-  margin-left: 1vh;
-}
-
-.followers-list .content-list-horizontal img{
-  height: 40px;
-  width: 40px;
-  border-radius: 24px;
-  border: solid #9AB4DF;
-}
-
-
-
-
-/*--------------------------general--------------------------*/ 
-.home-section .home-content p{
-  color: #6F6F6F;
-  font-family: nunitoRegular;
-}
-
-.head{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 3vh;
-  width: 80%;
-  margin-left: 5%;
 }
 
 .head-advertisement{
@@ -2344,7 +2255,13 @@ a.btnLike2 {
   margin-right: 1rem;
 }
 
+/*----------------------------Sell Product Responsive*/
+
 @media only screen and (max-width: 500px) and (min-width: 200px) {
+  .profile-sell{
+    margin-right: 35%;
+  }
+
   .head{
     width: 50%;
   }
@@ -2425,6 +2342,24 @@ a.btnLike2 {
   }
 }
 
+@media only screen and (max-width: 700px) and (min-width: 500px) {
+  .profile-sell{
+    margin-right: 25%;
+  }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 700px) {
+  .profile-sell{
+    margin-right: 20%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1000px) {
+  .profile-sell{
+    margin-right: 15%;
+  }
+}
+
 @media only screen and (max-width: 1200px) and (min-width: 500px) {
   .container{
     margin-left: auto;
@@ -2442,6 +2377,72 @@ a.btnLike2 {
   .advertisement{
     font-size: 14px;
   }
+}
+
+/*--------------------------Seguidoras--------------------------*/ 
+
+.head-user .form-control{
+  text-align: center;
+  border-radius: 12px;
+  width: 200px;
+  left: 0; 
+  top: 0;
+  justify-content: center;
+}
+
+.head-user i{
+  position: absolute;
+  z-index: 99;
+  color: #9C9C9C;
+  line-height: 2;
+  margin-left: 1vh;
+}
+
+.head-user .search-box{
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+  align-self: flex-end;
+}
+
+.followers-list{
+  margin-top: 3vh;
+}
+
+.followers-list .content-list-horizontal .list-group{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+.followers-list .content-list-horizontal p{
+  margin-left: 1vh;
+}
+
+.followers-list .content-list-horizontal img{
+  height: 40px;
+  width: 40px;
+  border-radius: 24px;
+  border: solid #9AB4DF;
+}
+
+
+
+
+/*--------------------------general--------------------------*/ 
+.home-section .home-content p{
+  color: #6F6F6F;
+  font-family: nunitoRegular;
+}
+
+.head{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3vh;
+  width: 80%;
+  margin-left: 5%;
 }
 
 .home-section h1{
