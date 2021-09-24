@@ -2379,6 +2379,17 @@ a.btnLike2 {
   }
 }
 
+/*----------------------Confirmación de compra-------------------*/
+
+.purchase-head{
+  width: 100%;
+  background-color: #54B6CB;
+  height: auto;
+  text-align: center;
+  color: #fff;
+  padding: 1rem 0;
+}
+
 /*--------------------------Seguidoras--------------------------*/ 
 
 .head-user .form-control{
