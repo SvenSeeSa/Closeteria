@@ -2972,6 +2972,68 @@ a.btnLike2 {
   margin-top: 1vh;
 }
 
+@media only screen and (max-width: 500px) and (min-width: 200px) {
+  .purchases-evaluation-content{
+    margin-left: 0vh;
+    margin-right: 15vh;
+  }
+
+  .head-user .search-box {
+    margin: 2% 0;
+    width: 62% !important;
+  }
+
+  .product-table .profile {
+    margin: 0 25px !important;
+  }
+
+  .head-user .head-title {
+    padding-left: 14px;
+    margin-left: -4vh;
+    font-size: 1em;
+    width: 70%;
+    margin-top: 5%;
+  }
+
+  .purchases-evaluation-content .evaluation-footer {
+    margin-left: -6%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 500px) {
+  .head-user .form-control{
+    width: 225px !important;
+    margin-right: 5vw;
+  }
+
+  .head-user .search-box {
+    margin-top: -4% !important;
+  }
+
+  .purchases-evaluation-content {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .product-table {
+    width: 87% !important;
+  }
+
+  .evaluation-box {
+    margin-top: 4vh;
+    margin-left: 0; 
+    width: 85% !important;
+  }
+
+  .purchases-evaluation-content .evaluation-footer {
+    width: 90%;
+  }
+
+  .head-user .head-title h2 {
+    width: 90%;
+  }
+}
+
 /*--------------------------Mis Ventas--------------------------*/ 
 
 .home-section .sales-confirmation-content{
@@ -3382,11 +3444,13 @@ a.btnLike2 {
 .head-user .search-box{
   display: flex;
   justify-content: flex-end;
+  margin-top: -2%;
   width: 90%;
 }
 
 .head-user .head-title{
-  padding-left: 14px;
+  margin-top: 5%;
+  max-width: 95%;
 }
 
 
@@ -3472,7 +3536,7 @@ a.btnLike2 {
 
   .product-table, .product-table tbody, .product-table tr, .product-table td{
     display: block;
-    width: 80%;
+    width: 85%;
   }
 
   .product-table tr{
