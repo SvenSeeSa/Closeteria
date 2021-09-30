@@ -3267,7 +3267,7 @@ a.btnLike2 {
 }
 
 .payment-step-content .checkout p{
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .payment-step-content .checkout .amount{
@@ -3287,11 +3287,13 @@ a.btnLike2 {
   display: flex;
   background-color: #F7F7F7;
   align-items: center;
+  padding: 0;
+  justify-content: center;
 }
 
 .payment-step-content .checkout .order .icon-container i{
   color: #B7BFBA;
-  font-size: 4vh;
+  font-size: 3vh;
 }
 
 .payment-step-content .checkout .order .card-body p{
