@@ -2882,7 +2882,6 @@ a.btnLike2 {
 
 .followers-list{
   margin-top: 3vh;
-  margin-left: 6vh;
   width: 90%;
 }
 
@@ -2903,6 +2902,27 @@ a.btnLike2 {
   width: 40px;
   border-radius: 24px;
   border: solid #9AB4DF;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1000px) {
+  .followers-list{
+  }
+}
+
+
+@media only screen and (max-width: 700px) and (min-width: 500px){
+  .head-user{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 700px) and (min-width: 200px){
+  .head-user .search-box .res-search{
+    margin-top: 3vh;
+    align-items: flex-start;
+    width: 100% !important;
+  }
 }
 
 /*--------------------------Mis Compras--------------------------*/ 
@@ -3297,6 +3317,7 @@ a.btnLike2 {
   flex-direction: row;
   justify-content: center;
   background-color: #F7F7F7; 
+  font-size: 2vh;
 }
 
 .payment-step-content .bank-box p{
@@ -3362,6 +3383,83 @@ a.btnLike2 {
   font-family: nunitoBold;
   color: #4d4d4d;
   font-size: 14px;
+}
+
+
+@media only screen and (max-width: 1500px) and (min-width: 1170px) {
+  .payment-step-content .bank-box{
+    font-size: 1.5vh;
+  }
+}
+
+@media only screen and (max-width: 1170px) and (min-width: 1000px) {
+  .payment-step-content .bank-box{
+    font-size: 1.2vh;
+  }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 600px){
+  .payment-step-content .bank-box{
+    font-size: 1vh;
+  }
+}
+
+
+@media only screen and (max-width: 600px) and (min-width: 500px){
+  .payment-step-content .bank-box{
+    font-size: 1.2vh;
+  }
+
+  .payment-content .intro-box .steps h6{
+    font-size: 15px;
+  }
+  
+  .payment-content h5{
+    font-size: 25px;
+  }
+
+  .payment-content .intro-box .steps i{
+    font-size: 30px;
+  }
+
+  .payment-content .intro-box .steps .logo{
+    height: 25px;
+  }
+
+  .payment-content .intro-box .steps .user{
+    height: 35px;
+  }
+}
+
+@media only screen and (max-width: 500px) and (min-width: 200px){
+  .payment-content .intro-box .steps h6{
+    font-size: 13px;
+  }
+
+  .payment-content .intro-box .steps{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .payment-content .protect-program{
+    font-size: 10px;
+  }
+  
+  .payment-content h5{
+    font-size: 20px;
+  }
+
+  .payment-content .intro-box .steps i{
+    font-size: 25px;
+  }
+
+  .payment-content .intro-box .steps .logo{
+    height: 20px;
+  }
+
+  .payment-content .intro-box .steps .user{
+    height: 25px;
+  }
 }
 
 /*--------------------------general--------------------------*/ 
