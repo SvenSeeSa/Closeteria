@@ -3018,6 +3018,30 @@ a.btnLike2 {
   .purchases-evaluation-content .evaluation-footer {
     margin-left: -6%;
   }
+
+  .historic {
+    width: 64% !important;
+  }
+
+  i.fas.fa-search{
+    line-height: 1.6;
+  }
+
+  .d-flex.search-box{
+    margin-top: 2% !important;
+  }
+
+  .purchases-received-content {
+    width: 70% !important;
+  }
+
+  .selector{
+    width: 45% !important;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+  }
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 500px) {
@@ -3051,6 +3075,10 @@ a.btnLike2 {
 
   .head-user .head-title h2 {
     width: 90%;
+  }
+
+  .historic {
+    width: 86% !important;
   }
 }
 
@@ -3128,6 +3156,78 @@ a.btnLike2 {
   margin-right: 4vh;
   font-size: 23px;
 }
+
+@media only screen and (max-width: 700px) and (min-width: 200px) {
+  .home-section .sales-confirmation-content {
+    margin-left: -3vh;
+    width: 50%;
+  }
+
+  .sales-confirmation-content .table-btn {
+    margin-left: 30%;
+  }
+
+  .text p {
+    width: 250px !important;
+  }
+
+  .home-section .sales-confirmation-content .text {
+    width: 30%;
+    font-size: 14px;
+  }
+
+  .table-btn .btn-text {
+    padding: 0px !important;
+    margin-left: 2px;
+    font-size: 12px;
+  }
+
+  .sales-report-content {
+    margin-left: -2vh;
+  }
+
+  .sales-report-content .text {
+    font-size: 16px;
+  }
+
+  .product-table, .product-table tbody, .product-table tr, .product-table td {
+    width: 80% !important;
+    margin-left: -2% !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 700px) {
+  .sales-confirmation-content .table-btn {
+    margin-left: 35%;
+  }
+
+  .sales-report-content .product {
+    width: 90%;
+  }
+
+  .code-box {
+    margin-left: 0;
+    width: 87%;
+  }
+
+  .table-btn .btn-text {
+    padding:  0 15px !important;
+  }
+
+  .code-box .code-box-details .table-btn .btn-text {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1024px) {
+  .sales-confirmation-content .table-btn {
+    margin-left: 30%;
+  }
+}
+
+/*aqui*/
 
 /*--------------------------Recuperar contraseña enviada--------------------------*/ 
 .content-box{
