@@ -139,29 +139,40 @@
 
                 <label  class="col-md-4 col-form-label text-md-right label">Provincia:</label>
                 <div class="col-md-3">
-                    <select  type="text" class="form-control" id="provincia" name="province_id" value="">
+                    <select  type="text" class="form-control" id="province" name="province_id" value="">
                         <option>Seleccione la provincia</option>
-                        <option>Alajuela</option>
-                        <option>Cartago</option>
-                        <option>Guanacaste</option>
-                        <option>Heredia</option>
-                        <option>Limón</option>
-                        <option>Puntarenas</option>
-                        <option>San José</option>
-                    </select>
+                        <?php
+                            $data = json_decode(file_get_contents("http://backend.closeteria.com/api/provinces"), true);
+                            $count_provinces = count($data["provinces"]);
 
+                            for( $i=0; $i<$count_provinces; $i++ ){ 
+                                echo "<option value=".$data["provinces"][$i]["id"].">".$data["provinces"][$i]["name"]."</option>";
+                            }
+
+                            $select = $_POST['province_id'];
+
+                        ?>
+                    </select>
                     <span id="noprovincia" class="registerfail"></span>                                
                 </div>
             </div>
+            
             <div class="form-group row">
                 <label  class="col-md-4 col-form-label text-md-right label">Cantón:</label>
                 <div class="col-md-3">
-                    <select  type="text" disabled="disabled" class="form-control" id="canton" name="canton_id" value="">
-                        <option value="">Moravia</option>
-                        <option value="">Tibás</option>
-                        <option value="">Goicoechea </option>
-                        <option value="">Montes de Oca </option>
+                    <select  type="text" class="form-control" id="canton" name="canton_id" value="">
+                        <option>Seleccione el cantón</option>
+                        <?php
+                            $data = json_decode(file_get_contents("http://backend.closeteria.com/api/province/3/cantons"), true);
+                            $count_cantons = count($data["cantons"]);
+
+                            for( $i=0; $i<$count_cantons; $i++ ){ 
+                                echo "<option>".$data["cantons"][$i]["name"]."</option>";
+                            }
+
+                        ?>
                     </select>
+                    
                     <span id="nocanton" class="registerfail"></span>
                 </div>
             </div>
