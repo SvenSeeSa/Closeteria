@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
+    
 </head>
 <body>
     <header>
@@ -139,7 +140,7 @@
 
                 <label  class="col-md-4 col-form-label text-md-right label">Provincia:</label>
                 <div class="col-md-3">
-                    <select  type="text" class="form-control" id="province" name="province_id" value="">
+                    <select type="text" class="form-control" id="province" name="province_id" value="" onchange="getCantons(value)">
                         <option>Seleccione la provincia</option>
                         <?php
                             $data = json_decode(file_get_contents("http://backend.closeteria.com/api/provinces"), true);
@@ -149,7 +150,8 @@
                                 echo "<option value=".$data["provinces"][$i]["id"].">".$data["provinces"][$i]["name"]."</option>";
                             }
 
-                            $select = $_POST['province_id'];
+                            // $select = $_POST['province_id'];
+                            
 
                         ?>
                     </select>
@@ -411,5 +413,30 @@
 </div>
 
 <script src="js/general.js"></script>
+
+<script type="text/javascript">
+
+    function getCantons(id){
+        var ajax = new XMLHttpRequest();
+        ajax.open("GET", "https://backend.closeteria.com/api/province/"+id+"/cantons", true);
+        ajax.send();
+
+        ajax.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                var response = JSON.parse(this.responseText);
+                console.log(response);
+                // var html = "<option>Select order</option>";
+                // for (var a = 0; a < response.length; a++) {
+                //     html += "<option value='" + response[a].orderNumber + "'>";
+                //         html += response[a].orderNumber;
+                //     html += "</option>";
+                // }
+                // document.getElementById("orders").innerHTML = html;
+            }
+        };
+    }
+
+</script>
+
 </body>
 </html>
