@@ -161,17 +161,8 @@
                 <div class="col-md-3">
                     <select  type="text" class="form-control" id="canton" name="canton" value="">
                         <option>Seleccione el cantón</option>
-                        <?php
-                            $data = json_decode(file_get_contents("http://backend.closeteria.com/api/province/3/cantons"), true);
-                            $count_cantons = count($data["cantons"]);
-
-                            for( $i=0; $i<$count_cantons; $i++ ){ 
-                                echo "<option>".$data["cantons"][$i]["name"]."</option>";
-                            }
-
-                        ?>
                     </select>
-                    
+                    <div id="prueba"></div>
                     <span id="nocanton" class="registerfail"></span>
                 </div>
             </div>
@@ -451,12 +442,15 @@
 </script>
 <script type="text/javascript">
 	function recargarLista($data_array){   
-        var arr = $data_array["cantons"];
 
-        for( $i=0; $i<arr.length; $i++ ){ 
-            //echo "<option>".$data["cantons"][$i]["name"]."</option>";
+        document.getElementById("canton").innerHTML = "<option> Seleccione el cantón </option>";
+        var arr = $data_array["cantons"];
+                        
+        for( $i=0; $i<arr.length; $i++ ){
+            document.getElementById("canton").innerHTML += "<option>"+$data_array["cantons"][$i]["name"]+"</option>";
             console.log($data_array["cantons"][$i]["name"]);
-        }   
+        }
+           
 	}
 </script>
 
