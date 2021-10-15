@@ -140,18 +140,15 @@
 
                 <label  class="col-md-4 col-form-label text-md-right label">Provincia:</label>
                 <div class="col-md-3">
-                    <select type="text" class="form-control" id="province" name="province_id" value="" onchange="getCantons(value)">
-                        <option>Seleccione la provincia</option>
+                    <select type="text" class="form-control" id="province" name="province" value="" onchange="getCantons(value)">
+                        <option value="0">Seleccione la provincia</option>
                         <?php
                             $data = json_decode(file_get_contents("http://backend.closeteria.com/api/provinces"), true);
                             $count_provinces = count($data["provinces"]);
 
                             for( $i=0; $i<$count_provinces; $i++ ){ 
                                 echo "<option value=".$data["provinces"][$i]["id"].">".$data["provinces"][$i]["name"]."</option>";
-                            }
-
-                            // $select = $_POST['province_id'];
-                            
+                            }                            
 
                         ?>
                     </select>
@@ -162,7 +159,7 @@
             <div class="form-group row">
                 <label  class="col-md-4 col-form-label text-md-right label">Cantón:</label>
                 <div class="col-md-3">
-                    <select  type="text" class="form-control" id="canton" name="canton_id" value="">
+                    <select  type="text" class="form-control" id="canton" name="canton" value="">
                         <option>Seleccione el cantón</option>
                         <?php
                             $data = json_decode(file_get_contents("http://backend.closeteria.com/api/province/3/cantons"), true);
@@ -424,7 +421,11 @@
         ajax.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
                 var response = JSON.parse(this.responseText);
-                console.log(response);
+                //console.log(response);
+                $data_array = response;
+                console.log($data_array);
+                console.log($data_array["cantons"]);
+                recargarLista($data_array);
                 // var html = "<option>Select order</option>";
                 // for (var a = 0; a < response.length; a++) {
                 //     html += "<option value='" + response[a].orderNumber + "'>";
@@ -436,6 +437,27 @@
         };
     }
 
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#province').val(0);
+		//recargarLista();
+
+		$('#province').change(function(){
+		//	recargarLista();
+		});
+	})
+</script>
+<script type="text/javascript">
+	function recargarLista($data_array){   
+        var arr = $data_array["cantons"];
+
+        for( $i=0; $i<arr.length; $i++ ){ 
+            //echo "<option>".$data["cantons"][$i]["name"]."</option>";
+            console.log($data_array["cantons"][$i]["name"]);
+        }   
+	}
 </script>
 
 </body>
