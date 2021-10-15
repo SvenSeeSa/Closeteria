@@ -160,9 +160,8 @@
                 <label  class="col-md-4 col-form-label text-md-right label">Cantón:</label>
                 <div class="col-md-3">
                     <select  type="text" class="form-control" id="canton" name="canton" value="">
-                        <option>Seleccione el cantón</option>
+                        <option value="0">Seleccione el cantón</option>
                     </select>
-                    <div id="prueba"></div>
                     <span id="nocanton" class="registerfail"></span>
                 </div>
             </div>
@@ -415,7 +414,6 @@
                 //console.log(response);
                 $data_array = response;
                 console.log($data_array);
-                console.log($data_array["cantons"]);
                 recargarLista($data_array);
                 // var html = "<option>Select order</option>";
                 // for (var a = 0; a < response.length; a++) {
@@ -433,24 +431,20 @@
 <script type="text/javascript">
 	$(document).ready(function(){
 		$('#province').val(0);
-		//recargarLista();
-
-		$('#province').change(function(){
-		//	recargarLista();
-		});
+		$('#canton').val(0);
 	})
 </script>
 <script type="text/javascript">
 	function recargarLista($data_array){   
 
-        document.getElementById("canton").innerHTML = "<option> Seleccione el cantón </option>";
+        document.getElementById("canton").innerHTML = "<option value=0> Seleccione el cantón </option>";
         var arr = $data_array["cantons"];
                         
         for( $i=0; $i<arr.length; $i++ ){
-            document.getElementById("canton").innerHTML += "<option>"+$data_array["cantons"][$i]["name"]+"</option>";
-            console.log($data_array["cantons"][$i]["name"]);
+            document.getElementById("canton").innerHTML += "<option value="+$data_array["cantons"][$i]["id"]+">"+$data_array["cantons"][$i]["name"]+"</option>";
+            console.log($data_array["cantons"][$i]["id"]);
         }
-           
+
 	}
 </script>
 
