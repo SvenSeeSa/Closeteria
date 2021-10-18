@@ -72,7 +72,6 @@
                             </div>
 
                             <div class="col-md-4">
-
                                 <input  type="text" class="" id="user" name="user" value="" />
 
                                 <small id="nouser" class="registerfail">El nombre de usuario no está disponible, por favor intentá con otro.</small>
@@ -159,7 +158,7 @@
             <div class="form-group row">
                 <label  class="col-md-4 col-form-label text-md-right label">Cantón:</label>
                 <div class="col-md-3">
-                    <select  type="text" class="form-control" id="canton" name="canton" value="">
+                    <select  type="text" class="form-control" id="canton" name="canton" value="" onchange="getDistricts(value)">
                         <option value="0">Seleccione el cantón</option>
                     </select>
                     <span id="nocanton" class="registerfail"></span>
@@ -171,10 +170,8 @@
                 <label  class="col-md-4 col-form-label text-md-right label">Distrito:</label>
                 <div class="col-md-3">
 
-                    <select  type="text" disabled="disabled" class="form-control" id="distrito" name="district_id" value="">
-                    <option>San Jerónimo</option>
-                    <option>San Vicente</option>
-                    <option>Trinidad</option>
+                    <select  type="text" class="form-control" id="district" name="district" value="">
+                        <option value="0">Seleccione el distrito</option>
                     </select>
                     <span id="nodistrito" class="registerfail"></span>
                 </div>
@@ -209,14 +206,15 @@
                 <label  class="col-md-5 col-form-label text-md-right label" >Banco:</label>
                 <div class="col-md-3 " >
                     <select  type="text" class="form-control" id="banco" name="bank_id" value="">
-                     <option>Seleccione...</option>
+                        <option value="0">Seleccione...</option>
+                        <?php
+                            $data = json_decode(file_get_contents("http://backend.closeteria.com/api/banks"), true);
+                            $count_banks = count($data["banks"]);
 
-                     <option value="1">Banco Nacional</option>
-
-                     <option value="2">BAC</option>
-
-                     <option value="3">Davivienda</option>
-
+                            for( $i=0; $i<$count_banks; $i++ ){ 
+                                echo "<option value=".$data["banks"][$i]["id"].">".$data["banks"][$i]["name"]."</option>";
+                            }                            
+                        ?>
                     </select>                                
                 </div>
               </div>
@@ -240,9 +238,15 @@
 
                     <select  type="text" class="form-control" id="tipocedula" name="document_type_id" value="">
 
-                    <option >Seleccione tipo cédula</option>
-                    <option value="1">Física</option>
-                     <option value="2">Jurídica</option>
+                    <option value="0">Seleccione tipo cédula</option>
+                    <?php
+                        $data = json_decode(file_get_contents("http://backend.closeteria.com/api/documenttypes"), true);
+                        $count_ids = count($data["documentTypes"]);
+
+                        for( $i=0; $i<$count_ids; $i++ ){ 
+                            echo "<option value=".$data["documentTypes"][$i]["id"].">".$data["documentTypes"][$i]["name"]."</option>";
+                        }                            
+                    ?>
                     </select>
                 </div>
               </div>
@@ -411,17 +415,28 @@
         ajax.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
                 var response = JSON.parse(this.responseText);
-                //console.log(response);
                 $data_array = response;
                 console.log($data_array);
-                recargarLista($data_array);
-                // var html = "<option>Select order</option>";
-                // for (var a = 0; a < response.length; a++) {
-                //     html += "<option value='" + response[a].orderNumber + "'>";
-                //         html += response[a].orderNumber;
-                //     html += "</option>";
-                // }
-                // document.getElementById("orders").innerHTML = html;
+                updateListCantons($data_array);
+            }
+        };
+    }
+
+</script>
+
+<script type="text/javascript">
+
+    function getDistricts(id){
+        var ajax = new XMLHttpRequest();
+        ajax.open("GET", "https://backend.closeteria.com/api/canton/"+id+"/districts", true);
+        ajax.send();
+
+        ajax.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                var response = JSON.parse(this.responseText);
+                $data_array_districts = response;
+                console.log($data_array_districts);
+                updateListDistricts($data_array_districts);
             }
         };
     }
@@ -432,10 +447,12 @@
 	$(document).ready(function(){
 		$('#province').val(0);
 		$('#canton').val(0);
+		$('#districts').val(0);
 	})
 </script>
+
 <script type="text/javascript">
-	function recargarLista($data_array){   
+	function updateListCantons($data_array){   
 
         document.getElementById("canton").innerHTML = "<option value=0> Seleccione el cantón </option>";
         var arr = $data_array["cantons"];
@@ -443,6 +460,20 @@
         for( $i=0; $i<arr.length; $i++ ){
             document.getElementById("canton").innerHTML += "<option value="+$data_array["cantons"][$i]["id"]+">"+$data_array["cantons"][$i]["name"]+"</option>";
             console.log($data_array["cantons"][$i]["id"]);
+        }
+
+	}
+</script>
+
+<script type="text/javascript">
+	function updateListDistricts($data_array_districts){   
+
+        document.getElementById("district").innerHTML = "<option value=0> Seleccione el cantón </option>";
+        var arr = $data_array_districts["districts"];
+                        
+        for( $i=0; $i<arr.length; $i++ ){
+            document.getElementById("district").innerHTML += "<option value="+$data_array_districts["districts"][$i]["id"]+">"+$data_array_districts["districts"][$i]["name"]+"</option>";
+            console.log($data_array_districts["districts"][$i]["id"]);
         }
 
 	}
