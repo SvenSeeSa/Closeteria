@@ -222,7 +222,7 @@
                             <div class="form-group row">
                                 <label class="col-md-5 col-form-label text-md-right label">Banco:</label>
                                 <div class="col-md-4 ">
-                                    <select type="text" class="register-form-control" id="banco" name="bank_id" value="">
+                                    <select type="text" class="form-control" id="bank" name="bank_id" value="">
                                         <option value="0">Seleccione...</option>
                                         <?php
                                             $data = json_decode(file_get_contents("http://backend.closeteria.com/api/banks"), true);

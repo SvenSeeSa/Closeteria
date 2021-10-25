@@ -1,3 +1,6 @@
+var globlalForm = {};
+var textAreaGlobal = "";
+
 function getCantons(id) {
     var ajax = new XMLHttpRequest();
     ajax.open("GET", "https://backend.closeteria.com/api/province/" + id + "/cantons", true);
@@ -38,7 +41,7 @@ function getDistricts(id) {
 }
 
 function updateListDistricts($data_array_districts) {
-    document.getElementById("district").innerHTML = "<option value=0> Seleccione el cantón </option>";
+    document.getElementById("district").innerHTML = "<option value=0> Seleccione el distrito </option>";
     var arr = $data_array_districts["districts"];
 
     for ($i = 0; $i < arr.length; $i++) {
@@ -51,11 +54,15 @@ function verifyForm(formId) {
     let formValues = {};
     var form1Inputs = document.forms[formId].getElementsByTagName("input");
     var textArea = document.getElementById("direccion").value;
+    textAreaGlobal = textArea;
     var errorReg = false;
 
     for (let i = 0; i < form1Inputs.length; i++) {
         formValues[form1Inputs[i].name] = form1Inputs[i].value;
+        globlalForm[form1Inputs[i].name] = form1Inputs[i].value;
     }
+
+    console.log(globlalForm);
 
     if(formValues["user"] === '' || formValues["user"].trim() === ''){
         document.getElementById("nouser").innerHTML = "Selecciona un nombre de usuario";
@@ -63,6 +70,9 @@ function verifyForm(formId) {
     }else if(formValues["user"].length < 4){
         document.getElementById("nouser").innerHTML = "Nombre de usuario muy corto, elija uno de 4 caracteres o más";
         errorReg = true;
+    }else{
+        document.getElementById("noname").innerHTML = "";
+        verifyUser();
     }
 
     if(formValues["name"] === '' || formValues["name"].trim() === ''){
@@ -90,6 +100,7 @@ function verifyForm(formId) {
         document.getElementById("noemail").innerHTML = "Digita tu correo electrónico";
         errorReg = true;
     }else{
+        verifyEmail();
         document.getElementById("noemail").innerHTML = "";
     }
 
@@ -148,11 +159,60 @@ function verifyForm(formId) {
             behavior: 'smooth' 
         });
     }else{
-        verifyEmail();
-        verifyUser();
-        //uploadProfile();
+        uploadProfile();
     }
-    console.log(formValues);
+}
+
+function uploadProfile(){
+    var ajax = new XMLHttpRequest();
+
+    ajax.open("POST", "https://backend.closeteria.com/api/register?name="+
+        globlalForm["name"]+"&surname="+
+        globlalForm["surname"]+"&nickname="+
+        globlalForm["user"]+"&email="+
+        globlalForm["email"]+"&password="+
+        globlalForm["password"]+"&address="+
+        textAreaGlobal+"&province_id="+
+        document.getElementById("province").value+"&canton_id="+
+        document.getElementById("canton").value+"&district_id="+
+        document.getElementById("district").value+"&bank_id="+
+        document.getElementById("bank").value+"&account_holder="+
+        globlalForm["account_holder"]+"&document_type_id="+
+        document.getElementById("tipocedula").value+"&document="+
+        globlalForm["document"]+"&account_iban="+
+        globlalForm["account_iban"]+"&account_number="+
+        globlalForm["account_number"]+"&account_paypal="+
+        globlalForm["account_paypal"]+"&app=0", true);
+    ajax.send();
+
+    ajax.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            var response = JSON.parse(this.responseText);
+            if(response["status"] === "error"){
+                document.getElementById("noemail").innerHTML = response["message"];
+            }
+        }
+    };
+
+    uploadPhotos();
+}
+
+function uploadPhotos(){
+    var ajax = new XMLHttpRequest();
+
+    ajax.open("POST", "http://backend.closeteria.com/api/profile/uploaddocuments?"+"document_photo_front="+
+        globlalForm["document_photo_front"]+"&document_photo_reverse="+
+        globlalForm["document_photo_reverse"],true);
+    ajax.send();
+
+    ajax.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            var response = JSON.parse(this.responseText);
+            if(response["status"] === "error"){
+                document.getElementById("noemail").innerHTML = response["message"];
+            }
+        }
+    };
 }
 
 function verifyEmail() {
